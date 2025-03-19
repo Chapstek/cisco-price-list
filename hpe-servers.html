@@ -5,67 +5,66 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DS6E4K3821"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+        function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-DS6E4K3821');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover the latest Cisco Routers Price List for January 2025. Get the best deals on Cisco 921, 1100 Series, and ISR4331 routers in Lusaka, Zambia.">
-    <meta name="keywords" content="Cisco routers, Cisco price list 2025, networking equipment, Cisco ISR, Cisco 1100 series, Cisco 921, enterprise routers">
+    <meta name="description" content="Discover the latest HPE Servers Price List for January 2025. Get the best deals on HPE ProLiant DL388 Gen10, DL360 Gen10, and server licenses in Lusaka, Zambia.">
+    <meta name="keywords" content="HPE servers, HPE price list 2025, networking equipment, HPE ProLiant, DL388 Gen10, DL360 Gen10, server licenses, enterprise servers">
     <meta name="author" content="Darwin Chapuswike">
-
     <title>HPE Servers</title>
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
-            background-color: #003366;
-            font-family: Arial, sans-serif;
+            box-sizing: border-box;
         }
 
-        /* Header container styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #003366;
+            line-height: 1.6;
+        }
+
         .header-container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
-            text-align: center;
             background-color: #003366;
             color: white;
-            padding: 10px;
+            padding: 1rem;
+            text-align: center;
         }
 
         .header-container img {
-            width: 120px;
+            width: 100px;
             height: auto;
         }
 
         header {
             flex: 1;
-            text-align: center;
+            padding: 0.5rem;
         }
 
-        h1, h2, h3 {
-            margin: 5px 0;
-        }
+        h1 { font-size: 1.8rem; }
+        h2 { font-size: 1.4rem; }
+        h3 { font-size: 1.2rem; }
 
-        /* Navbar */
         .navbar {
             background-color: #333;
             overflow: hidden;
-            margin-top: 10px;
         }
 
         .navbar a {
             float: left;
             display: block;
             color: white;
-            padding: 14px 20px;
-            text-align: center;
+            padding: 1rem;
             text-decoration: none;
+            text-align: center;
         }
 
         .navbar a:hover {
@@ -75,146 +74,183 @@
 
         .navbar a.active {
             background-color: #004080;
-            color: white;
             font-weight: bold;
         }
 
-        /* Search Bar */
         .search-bar {
-            padding: 10px;
-            width: 300px;
-            margin: 10px 0;
+            width: 100%;
+            max-width: 400px;
+            padding: 0.8rem;
+            margin: 1rem auto;
+            display: block;
+            border-radius: 5px;
+            border: 1px solid #ccc;
         }
 
         .search-results {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #fff;
+            margin: 1rem;
+            padding: 1rem;
+            background-color: white;
             border: 1px solid #ddd;
+            border-radius: 5px;
             display: none;
-        }
-
-        .search-results p {
-            margin: 5px 0;
-        }
-
-        .search-results a {
-            color: inherit;
-            text-decoration: none;
-            cursor: pointer;
         }
 
         .search-results a:hover {
             color: #007BFF;
         }
 
-        /* Main content section */
         .content {
             max-width: 1200px;
-            margin: auto;
-            padding: 20px;
+            margin: 0 auto;
+            padding: 1rem;
         }
 
         .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-start; /* Align products to the left */
-            gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
         }
 
         .router-card {
             background-color: white;
             border: 1px solid #ddd;
             border-radius: 5px;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            width: 250px;
-        }
-
-        .router-card h2 {
-            margin-top: 0;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
         .router-card img {
             max-width: 100%;
             height: auto;
             border: 1px solid #ccc;
-            margin: 10px 0;
+            margin: 0.5rem 0;
         }
 
         .price {
             color: #007BFF;
-            font-size: 1.2em;
+            font-size: 1.2rem;
             font-weight: bold;
         }
 
-        .quantity {
-            color: #555;
-        }
+        .quantity { color: #555; }
+        .warranty { color: #FF0000; }
 
-        .warranty {
-            color: #FF0000;
-        }
-
-        /* Contact Section */
         .contact {
-            max-width: 600px;
-            margin: auto;
-            padding: 20px;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1.5rem;
             background-color: white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
         .contact h2 {
             text-align: center;
+            margin-bottom: 1rem;
         }
 
+        .contact form select,
         .contact form input,
-        .contact form textarea,
-        .contact button {
-            width: 95%;
-            margin: 10px 0;
-            padding: 10px;
+        .contact form textarea {
+            width: 100%;
+            margin: 0.5rem 0;
+            padding: 0.8rem;
             border: 1px solid #ccc;
             border-radius: 5px;
-            font-size: 1em;
         }
 
-        .contact button {
+        .contact form button {
+            width: 100%;
+            padding: 0.8rem;
             background-color: #004080;
             color: white;
             border: none;
+            border-radius: 5px;
             cursor: pointer;
         }
 
-        .contact button:hover {
+        .contact form button:hover {
             background-color: #003366;
         }
 
-        .contact a {
-            text-align: center;
-            display: block;
-            margin-top: 10px;
-            color: #25D366;
-            font-size: 1.2em;
+        .whatsapp-link {
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            background-color: #25D366;
+            color: white;
+            padding: 0.8rem;
+            border-radius: 50px;
             text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .whatsapp-link img {
+            height: 1.2rem;
+            vertical-align: middle;
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                padding: 0.5rem;
+            }
+
+            .header-container img {
+                width: 80px;
+            }
+
+            h1 { font-size: 1.5rem; }
+            h2 { font-size: 1.2rem; }
+            h3 { font-size: 1rem; }
+
+            .navbar {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .navbar a {
+                float: none;
+                width: 50%;
+                box-sizing: border-box;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .whatsapp-link span {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .router-card {
+                padding: 0.8rem;
+            }
+
+            .search-bar {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-
-    <!-- Header -->
     <div class="header-container">
-        <img src="router-switch-image.png" alt="Router-Switch Representative">
+        <img src="routerswitch_logo.png" alt="Router-Switch Representative">
         <header>
             <h1>Networking Equipment For Sale</h1>
             <h2>Fast Shipping Worldwide</h2>
             <h3>Request a quotation</h3>
         </header>
-        <img src="router-switch-image.png" alt="Router-Switch Representative">
+        <img src="routerswitch_logo.png" alt="Router-Switch Representative">
     </div>
 
-    <!-- Navbar -->
     <div class="navbar">
         <a href="index.html">Cisco Routers</a>
         <a href="huawei.html">Huawei Routers</a>
@@ -223,61 +259,54 @@
         <a href="hpe-switches.html">HPE Switches</a>
         <a href="huawei-switches.html">Huawei Switches</a>
         <a href="hpe-servers.html" class="active">HPE Servers</a>
-		<a href="RS Price List 2025.xlsx" download>Download Price List</a>
+        <a href="RS Price List 2025.xlsx" download>Download Price List</a>
     </div>
 
-    <!-- Search Bar -->
     <div class="content">
-        <input class="search-bar" type="text" id="search-input" placeholder="Search for HPE servers..." onkeyup="searchRouters()">
+        <input class="search-bar" type="text" id="search-input" placeholder="Search for HPE servers..." onkeyup="searchServers()">
         <div class="search-results" id="search-results"></div>
 
-        <!-- Router Cards Section -->
         <div class="container">
-            <!-- Product 1 -->
-            <div class="router-card" id="HPE-Proliant-DL388-Gen10-Servers">
-                <h2>P25217-AA1 - HPE Proliant DL388 Gen10 Servers</h2>
-                <img src="p2521.png" alt="HPE Proliant DL388 Gen10 Servers">
-                <p class="description">(12-Core, 2.4 GHz, 100W) 1P 16G P408i-a NC 8SFF 800W PS server</p>
+            <div class="router-card" id="HPE-Proliant-DL388-Gen10-Servers-P25217">
+                <h2>P25217-AA1 - HPE ProLiant DL388 Gen10</h2>
+                <img src="p2521.png" alt="HPE ProLiant DL388 Gen10 Servers">
+                <p class="description">12-Core, 2.4 GHz, 100W, 1P 16G P408i-a NC 8SFF 800W PS server</p>
                 <p class="price">Price: $2,969</p>
                 <p class="quantity">Quantity: Many in stock</p>
                 <p class="warranty">Warranty: 3 years</p>
             </div>
 
-            <!-- Product 2 -->
-            <div class="router-card" id="HPE-Proliant-DL388-Gen10-Servers">
-                <h2>P25216-AA1 - HPE Proliant DL388 Gen10 Servers</h2>
-                <img src="p2521.png" alt="HPE Proliant DL388 Gen10 Servers">
-                <p class="description">(10-Core, 2.4 GHz, 100W) 1P 16G P408i-a NC 8SFF 800W PS server</p>
+            <div class="router-card" id="HPE-Proliant-DL388-Gen10-Servers-P25216">
+                <h2>P25216-AA1 - HPE ProLiant DL388 Gen10</h2>
+                <img src="p2521.png" alt="HPE ProLiant DL388 Gen10 Servers">
+                <p class="description">10-Core, 2.4 GHz, 100W, 1P 16G P408i-a NC 8SFF 800W PS server</p>
                 <p class="price">Price: $6,055</p>
                 <p class="quantity">Quantity: Many in stock</p>
                 <p class="warranty">Warranty: 3 years</p>
             </div>
 
-            <!-- Product 3 -->
-            <div class="router-card" id="HPE-Proliant-DL388-Gen10-Servers">
-                <h2>P25215-AA1 - HPE Proliant DL388 Gen10 Servers</h2>
-                <img src="p2521.png" alt="HPE Proliant DL388 Gen10 Servers">
-                <p class="description">(8-Core, 1.9 GHz, 85W) 1P 16G P408i-a NC 8SFF 500W PS server</p>
+            <div class="router-card" id="HPE-Proliant-DL388-Gen10-Servers-P25215">
+                <h2>P25215-AA1 - HPE ProLiant DL388 Gen10</h2>
+                <img src="p2521.png" alt="HPE ProLiant DL388 Gen10 Servers">
+                <p class="description">8-Core, 1.9 GHz, 85W, 1P 16G P408i-a NC 8SFF 500W PS server</p>
                 <p class="price">Price: $1,603</p>
                 <p class="quantity">Quantity: Many in stock</p>
                 <p class="warranty">Warranty: 3 years</p>
             </div>
 
-            <!-- Product 4 -->
             <div class="router-card" id="HPE-Proliant-DL360-Gen10-Servers">
-                <h2>P23578-AA1 - HPE Proliant DL360 Gen10 Servers</h2>
-                <img src="dl360.png" alt="HPE Proliant DL360 Gen10 Servers">
-                <p class="description">(10-Core, 2.4 GHz, 100W) 1P 16G NC P408i-a 2G 8SFF 500W Svr</p>
+                <h2>P23578-AA1 - HPE ProLiant DL360 Gen10</h2>
+                <img src="dl360.png" alt="HPE ProLiant DL360 Gen10 Servers">
+                <p class="description">10-Core, 2.4 GHz, 100W, 1P 16G NC P408i-a 2G 8SFF 500W server</p>
                 <p class="price">Price: $2,694</p>
                 <p class="quantity">Quantity: Many in stock</p>
                 <p class="warranty">Warranty: 3 years</p>
             </div>
 
-            <!-- Product 5 -->
             <div class="router-card" id="HPE-Server-Licenses">
                 <h2>BD505A - HPE Server Licenses</h2>
                 <img src="bd505.png" alt="HPE Server Licenses">
-                <p class="description">HPE iLO Adv 1-svr Lic 3yr Support: ProLiant Management SW SERVER</p>
+                <p class="description">HPE iLO Adv 1-server License, 3yr Support: ProLiant Management SW</p>
                 <p class="price">Price: $114</p>
                 <p class="quantity">Quantity: Many in stock</p>
                 <p class="warranty">Warranty: 3 years</p>
@@ -285,60 +314,259 @@
         </div>
     </div>
 
-    <!-- Contact Section -->
     <div class="contact">
-	<center>
         <h2>Contact Sales Here</h2>
-        <p>For inquiries, feel free to reach out:</p>
-        <p>Phone: +260966130153</p>
-	</center>
-
         <form action="mailto:darwin@routerswitch.com" method="post" enctype="text/plain">
+            <label for="product">Select Product:</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a product</option>
+                <option value="P25217-AA1 - HPE Proliant DL388 Gen10 Servers">$2,969 - P25217-AA1</option>
+                <option value="P25216-AA1 - HPE Proliant DL388 Gen10 Servers">$6,055 - P25216-AA1</option>
+                <option value="P25215-AA1 - HPE Proliant DL388 Gen10 Servers">$1,603 - P25215-AA1</option>
+                <option value="P23578-AA1 - HPE Proliant DL360 Gen10 Servers">$2,694 - P23578-AA1</option>
+                <option value="BD505A - HPE Server Licenses">$114 - BD505A</option>
+            </select>
+
+            <label for="country">Country of Delivery:</label>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>Select a country</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Albania">Albania</option>
+                <option value="Algeria">Algeria</option>
+                <option value="Andorra">Andorra</option>
+                <option value="Angola">Angola</option>
+                <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Australia">Australia</option>
+                <option value="Austria">Austria</option>
+                <option value="Azerbaijan">Azerbaijan</option>
+                <option value="Bahamas">Bahamas</option>
+                <option value="Bahrain">Bahrain</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Barbados">Barbados</option>
+                <option value="Belarus">Belarus</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Belize">Belize</option>
+                <option value="Benin">Benin</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                <option value="Botswana">Botswana</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Brunei">Brunei</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Burkina Faso">Burkina Faso</option>
+                <option value="Burundi">Burundi</option>
+                <option value="Cabo Verde">Cabo Verde</option>
+                <option value="Cambodia">Cambodia</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="Canada">Canada</option>
+                <option value="Central African Republic">Central African Republic</option>
+                <option value="Chad">Chad</option>
+                <option value="Chile">Chile</option>
+                <option value="China">China</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Comoros">Comoros</option>
+                <option value="Congo, Democratic Republic of the">Congo, Democratic Republic of the</option>
+                <option value="Congo, Republic of the">Congo, Republic of the</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Cyprus">Cyprus</option>
+                <option value="Czechia">Czechia</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Djibouti">Djibouti</option>
+                <option value="Dominica">Dominica</option>
+                <option value="Dominican Republic">Dominican Republic</option>
+                <option value="East Timor">East Timor</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Egypt">Egypt</option>
+                <option value="El Salvador">El Salvador</option>
+                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                <option value="Eritrea">Eritrea</option>
+                <option value="Estonia">Estonia</option>
+                <option value="Eswatini">Eswatini</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Fiji">Fiji</option>
+                <option value="Finland">Finland</option>
+                <option value="France">France</option>
+                <option value="Gabon">Gabon</option>
+                <option value="Gambia">Gambia</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Germany">Germany</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Greece">Greece</option>
+                <option value="Grenada">Grenada</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Guinea">Guinea</option>
+                <option value="Guinea-Bissau">Guinea-Bissau</option>
+                <option value="Guyana">Guyana</option>
+                <option value="Haiti">Haiti</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Iceland">Iceland</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Iran">Iran</option>
+                <option value="Iraq">Iraq</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Israel">Israel</option>
+                <option value="Italy">Italy</option>
+                <option value="Jamaica">Jamaica</option>
+                <option value="Japan">Japan</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Kiribati">Kiribati</option>
+                <option value="Korea, North">Korea, North</option>
+                <option value="Korea, South">Korea, South</option>
+                <option value="Kosovo">Kosovo</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                <option value="Laos">Laos</option>
+                <option value="Latvia">Latvia</option>
+                <option value="Lebanon">Lebanon</option>
+                <option value="Lesotho">Lesotho</option>
+                <option value="Liberia">Liberia</option>
+                <option value="Libya">Libya</option>
+                <option value="Liechtenstein">Liechtenstein</option>
+                <option value="Lithuania">Lithuania</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Madagascar">Madagascar</option>
+                <option value="Malawi">Malawi</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Mali">Mali</option>
+                <option value="Malta">Malta</option>
+                <option value="Marshall Islands">Marshall Islands</option>
+                <option value="Mauritania">Mauritania</option>
+                <option value="Mauritius">Mauritius</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Micronesia">Micronesia</option>
+                <option value="Moldova">Moldova</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Mongolia">Mongolia</option>
+                <option value="Montenegro">Montenegro</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Mozambique">Mozambique</option>
+                <option value="Myanmar">Myanmar</option>
+                <option value="Namibia">Namibia</option>
+                <option value="Nauru">Nauru</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Niger">Niger</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="North Macedonia">North Macedonia</option>
+                <option value="Norway">Norway</option>
+                <option value="Oman">Oman</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Palau">Palau</option>
+                <option value="Panama">Panama</option>
+                <option value="Papua New Guinea">Papua New Guinea</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Peru">Peru</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Romania">Romania</option>
+                <option value="Russia">Russia</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                <option value="Saint Lucia">Saint Lucia</option>
+                <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+                <option value="Samoa">Samoa</option>
+                <option value="San Marino">San Marino</option>
+                <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Senegal">Senegal</option>
+                <option value="Serbia">Serbia</option>
+                <option value="Seychelles">Seychelles</option>
+                <option value="Sierra Leone">Sierra Leone</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Slovakia">Slovakia</option>
+                <option value="Slovenia">Slovenia</option>
+                <option value="Solomon Islands">Solomon Islands</option>
+                <option value="Somalia">Somalia</option>
+                <option value="South Africa">South Africa</option>
+                <option value="South Sudan">South Sudan</option>
+                <option value="Spain">Spain</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Sudan">Sudan</option>
+                <option value="Suriname">Suriname</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Syria">Syria</option>
+                <option value="Taiwan">Taiwan</option>
+                <option value="Tajikistan">Tajikistan</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Togo">Togo</option>
+                <option value="Tonga">Tonga</option>
+                <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                <option value="Tunisia">Tunisia</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Turkmenistan">Turkmenistan</option>
+                <option value="Tuvalu">Tuvalu</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="United Arab Emirates">United Arab Emirates</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Vanuatu">Vanuatu</option>
+                <option value="Vatican City">Vatican City</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Yemen">Yemen</option>
+                <option value="Zambia">Zambia</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+            </select>
+
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
+			
+			<label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
             <label for="message">Message:</label>
             <textarea id="message" name="message" required placeholder="Describe your inquiry (e.g., product details, pricing)"></textarea>
+
             <button type="submit">Send</button>
         </form>
-        <a href="https://wa.me/260966130153" target="_blank" style="position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; padding: 10px 15px; border-radius: 50px; text-decoration: none; font-size: 14px; box-shadow: 0 2px 5px rgba(0,0,0,0.3);">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="height: 20px; vertical-align: middle; margin-right: 8px;"> Chat with us on WhatsApp
+        <a href="https://wa.me/260966130153" target="_blank" class="whatsapp-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            <span>Chat with us on WhatsApp</span>
         </a>
     </div>
 
     <script>
-        // Function to search the router names and descriptions
-        function searchRouters() {
-            let query = document.getElementById('search-input').value.toLowerCase();
-            let results = [];
-            
-            // Reset results container and remove previous highlights
+        function searchServers() {
+            let gris = document.getElementById('search-input').value.toLowerCase();
             let resultsContainer = document.getElementById('search-results');
             resultsContainer.innerHTML = '';
             resultsContainer.style.display = 'none';
 
-            // Check each router card for a match
-            let routerCards = document.querySelectorAll('.router-card');
-            routerCards.forEach(card => {
-                let title = card.querySelector('h2').innerText.toLowerCase();
-                let description = card.querySelector('.description').innerText.toLowerCase();
-                if (title.includes(query) || description.includes(query)) {
-                    results.push(card);
-                }
+            let serverCards = document.querySelectorAll('.router-card');
+            let results = Array.from(serverCards).filter(card => {
+                let title = card.querySelector('h2').textContent.toLowerCase();
+                let description = card.querySelector('.description').textContent.toLowerCase();
+                return title.includes(gris) || description.includes(gris);
             });
 
-            // Display the results if there are matches
-            if (results.length > 0) {
+            if (results.length) {
                 results.forEach(result => {
-                    let resultText = document.createElement('p');
-                    resultText.innerHTML = `<a href="#${result.id}">${result.querySelector('h2').innerText}</a>`;
-                    resultsContainer.appendChild(resultText);
+                    let p = document.createElement('p');
+                    p.innerHTML = `<a href="#${result.id}">${result.querySelector('h2').textContent}</a>`;
+                    resultsContainer.appendChild(p);
                 });
                 resultsContainer.style.display = 'block';
-            } else {
-                resultsContainer.style.display = 'none';
             }
         }
     </script>
-
 </body>
 </html>
